@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=unode
+Comment=unode P2P Cryptocurrency
+Comment[fr]=unode, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=unode, eşten eşe kriptografik sanal para birimi
+Exec=unode-qt %u
+Terminal=false
+Type=Application
+Icon=unode128
+MimeType=x-scheme-handler/unode;
+Categories=Office;Finance;

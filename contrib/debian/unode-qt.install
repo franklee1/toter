@@ -1,0 +1,6 @@
+usr/local/bin/unode-qt usr/bin
+share/pixmaps/unode32.xpm usr/share/pixmaps
+share/pixmaps/unode16.xpm usr/share/pixmaps
+share/pixmaps/unode128.png usr/share/pixmaps
+debian/unode-qt.desktop usr/share/applications
+debian/unode-qt.protocol usr/share/kde4/services/

@@ -1,0 +1,22 @@
+[Unit]
+Description=unode's distributed currency daemon
+After=network.target
+
+[Service]
+User=unodecore
+Group=unodecore
+
+Type=forking
+PIDFile=/var/lib/unoded/unoded.pid
+ExecStart=/usr/bin/unoded -daemon -pid=/var/lib/unoded/unoded.pid \
+-conf=/etc/unodecore/unode.conf -datadir=/var/lib/unoded -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
